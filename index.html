@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ff7eb6">
+  <meta name="description" content="Invitación digital al cumpleaños de Luccas Alejandro">
+  <title>Luccas Alejandro | Mi cumpleaños</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loader" class="loader">
+    <div class="loader-balloon">🎈</div>
+    <p>Preparando una sorpresa...</p>
+  </div>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="decor decor-1">✦</div>
+      <div class="decor decor-2">★</div>
+      <div class="decor decor-3">✦</div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">¡Estás invitado!</p>
+        <h1 id="heroName">Luccas Alejandro</h1>
+        <div class="age-badge"><span id="heroAge">6</span> años</div>
+        <p class="hero-subtitle">a una celebración llena de alegría, juegos y mucha diversión.</p>
+        <button class="primary-btn" id="openInvitation">🎁 Abrir invitación</button>
+      </div>
+    </section>
+
+    <section class="invitation hidden" id="invitation">
+      <div class="section-inner">
+        <div class="photo-card reveal">
+          <div class="photo-frame">
+            <img id="mainPhoto" src="images/foto-principal.jpg" alt="Foto de Luccas Alejandro"
+                 onerror="this.style.display='none'; this.parentElement.classList.add('photo-placeholder')">
+            <div class="photo-placeholder-content">📸<br><small>Coloca aquí la foto principal</small></div>
+          </div>
+        </div>
+
+        <div class="intro reveal">
+          <p class="eyebrow">Una fecha muy especial</p>
+          <h2>¡Luccas cumple <span id="introAge">6</span> años!</h2>
+          <p>Y queremos compartir este momento contigo. Prepara tu mejor sonrisa porque nos espera una tarde increíble.</p>
+        </div>
+
+        <div class="event-grid reveal">
+          <article class="info-card">
+            <div class="icon">📅</div>
+            <span>Fecha</span>
+            <strong id="eventDate">27 de agosto de 2026</strong>
+          </article>
+          <article class="info-card">
+            <div class="icon">⏰</div>
+            <span>Hora</span>
+            <strong id="eventTime">5:30 p. m.</strong>
+          </article>
+          <article class="info-card">
+            <div class="icon">📍</div>
+            <span>Lugar</span>
+            <strong id="eventPlace">Av. 09 de Octubre 461</strong>
+          </article>
+        </div>
+
+        <div class="countdown-section reveal">
+          <p class="eyebrow">Falta muy poquito</p>
+          <h2>Cuenta regresiva</h2>
+          <div class="countdown" id="countdown">
+            <div><strong id="days">00</strong><span>Días</span></div>
+            <div><strong id="hours">00</strong><span>Horas</span></div>
+            <div><strong id="minutes">00</strong><span>Minutos</span></div>
+            <div><strong id="seconds">00</strong><span>Segundos</span></div>
+          </div>
+        </div>
+
+        <div class="map-card reveal">
+          <div>
+            <p class="eyebrow">¿Cómo llegar?</p>
+            <h2>¡Te esperamos!</h2>
+            <p id="mapAddress">Av. 09 de Octubre 461</p>
+          </div>
+          <a id="mapButton" class="primary-btn" href="#" target="_blank" rel="noopener">📍 Ver ubicación</a>
+        </div>
+
+        <div class="gallery-section reveal">
+          <p class="eyebrow">Momentos especiales</p>
+          <h2>Galería</h2>
+          <div class="gallery" id="gallery"></div>
+        </div>
+
+        <div class="gift-card reveal">
+          <div class="gift-icon">🎁</div>
+          <h2>Tu presencia es el mejor regalo</h2>
+          <p>Si deseas tener un detalle con Luccas, puedes hacerlo con mucho cariño. ❤️</p>
+        </div>
+
+        <div class="confirm-section reveal">
+          <p class="eyebrow">¡Confirma tu asistencia!</p>
+          <h2>Nos encantará verte</h2>
+          <p>Ayúdanos a preparar todo confirmando tu asistencia.</p>
+          <a id="whatsappButton" class="whatsapp-btn" href="#" target="_blank" rel="noopener">💬 Confirmar por WhatsApp</a>
+        </div>
+
+        <footer>
+          <p>Con mucho cariño, para celebrar a <strong id="footerName">Luccas Alejandro</strong> 🎉</p>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <button class="music-button" id="musicButton" aria-label="Activar música">🔇</button>
+  <audio id="backgroundMusic" loop preload="none"></audio>
+
+  <div class="lightbox hidden" id="lightbox">
+    <button id="closeLightbox" aria-label="Cerrar">×</button>
+    <img id="lightboxImage" src="" alt="Fotografía ampliada">
+  </div>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
