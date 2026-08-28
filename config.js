@@ -18,7 +18,7 @@ const INVITACION = {
   fechaISO: "2026-08-27T17:30:00-05:00",
   horaTexto: "5:30 p. m.",
 
-  lugar: "Av. 09 de Octubre 461",
+  lugar: "Av. 09 de Octubre 461 - Chiclayo",
 
   // Puedes reemplazar este enlace por el de Google Maps.
   mapsUrl: "https://www.google.com/maps/search/?api=1&query=Av.%2009%20de%20Octubre%20461",
