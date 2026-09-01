@@ -21,7 +21,7 @@ const INVITACION = {
   lugar: "Av. 09 de Octubre 461 - Chiclayo",
 
   // Puedes reemplazar este enlace por el de Google Maps.
-  mapsUrl: "https://www.google.com/maps/search/?api=1&query=Av.%2009%20de%20Octubre%20461",
+  mapsUrl: "https://maps.app.goo.gl/vW62vUudVQHXgXZh8",
 
   whatsapp: "51945488229",
   mensajeWhatsApp: "¡Hola! Confirmo mi asistencia al cumpleaños de Luccas Alejandro. 🎉",
